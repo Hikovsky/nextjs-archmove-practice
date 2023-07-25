@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,10 +8,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        "primary": ["Inter"],
+        "title": ["Playfair Display"],
+      },
+      colors: {
+        "c-orange": "#FD665E",
+        "c-gray": "rgba(0, 0, 0, 0.03)"
+      },
+      aspectRatio: {
+        "special": "305 / 432",
+        "architects": "342 / 500",
+        "dream": "497 / 684",
       },
     },
   },
